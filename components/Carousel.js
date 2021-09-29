@@ -4,7 +4,7 @@ import CarouselItem from "./CarouselItem";
 import { useSwipeable } from "react-swipeable";
 
 export default function Carousel() {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(1);
   const handlers = useSwipeable({
     onSwipedUp: () => {
       setActiveIndex(activeIndex + 1);
@@ -17,7 +17,7 @@ export default function Carousel() {
     <div className="carousel" {...handlers}>
       <div
         className="inner"
-        style={{ transform: `translateY(-${activeIndex * 100}vh)` }}
+        style={{ transform: `translateY(-${activeIndex * 90}vh)` }}
       >
         {images.map((y, i) => {
           return <CarouselItem key={i} src={y.url} />;
