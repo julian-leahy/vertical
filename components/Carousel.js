@@ -23,6 +23,18 @@ export default function Carousel() {
           return <CarouselItem key={i} src={y.url} />;
         })}
       </div>
+      <style jsx>{`
+        .carousel {
+          overflow: hidden;
+          flex: 3;
+          height: 100vh;
+        }
+
+        .inner {
+          transition: transform 0.8s;
+          height: 100%;
+        }
+      `}</style>
     </div>
   );
 }

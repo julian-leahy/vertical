@@ -15,9 +15,8 @@ export default function SideBar() {
         .sidebar {
           max-height: 100vh;
           background: blue;
-          width: 300px;
+          flex: 1;
           overflow: hidden;
-          margin-right: 30px;
           color: white;
           padding: 20px;
         }
