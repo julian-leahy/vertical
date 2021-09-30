@@ -34,14 +34,3 @@ img {
   transition: transform 0.8s;
   height: 100%;
 }
-
-.carousel-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 90vh;
-}
-
-.item {
-  height: 86vh;
-}
